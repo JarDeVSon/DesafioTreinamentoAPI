@@ -19,7 +19,8 @@ import java.io.IOException;
 )
 public class RunnerTest {
     @AfterClass
-    public static void geraRelatorio() throws IOException {
-        Runtime.getRuntime().exec("cmd.exe /c mvn cluecumber-report:reporting");
+    public static void report() throws IOException {
+        if (System.getProperty("os.name").equals("Windows 10"))
+            Runtime.getRuntime().exec("cmd.exe /c mvn cluecumber-report:reporting");
     }
 }
