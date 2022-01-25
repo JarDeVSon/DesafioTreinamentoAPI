@@ -20,8 +20,8 @@ public class JsonPlaceHolderSteps extends RequestsApi {
     HeadersApi headersApi = new HeadersApi();
     String userId = "33";
 
-    @Dado("que tenho um token válido")
-    public void queTenhoUmTokenVálido() {
+    @Dado("que tenho um token valido")
+    public void queTenhoUmTokenValido() {
         System.out.println("Não possui token");
     }
 
