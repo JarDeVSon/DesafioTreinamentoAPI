@@ -7,6 +7,7 @@ public class RequestsApi  extends UtilsApi implements VerbosApi{
     @Override
     public void POST() {
         response = given()
+                .log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -18,6 +19,7 @@ public class RequestsApi  extends UtilsApi implements VerbosApi{
     @Override
     public void GET() {
         response = given()
+                .log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -41,6 +43,7 @@ public class RequestsApi  extends UtilsApi implements VerbosApi{
     @Override
     public void PATCH() {
         response = given()
+                .log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -52,6 +55,7 @@ public class RequestsApi  extends UtilsApi implements VerbosApi{
     @Override
     public void DELETE() {
         response = given()
+                .log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
