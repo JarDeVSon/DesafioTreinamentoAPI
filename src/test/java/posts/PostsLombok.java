@@ -16,13 +16,6 @@ public class PostsLombok {
     private String title;
     private String body;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PostsLombok that = (PostsLombok) o;
-        return title.equals(that.title) && body.equals(that.body);
-    }
 
 
 }
