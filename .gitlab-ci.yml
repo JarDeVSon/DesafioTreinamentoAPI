@@ -1,7 +1,9 @@
+image: adoptopenjdk/maven-openjdk11
+
 build-job:
   stage: build
   script:
-    - mvn verify
+    - mvn compile
 test-job:
   stage: test
   script:
