@@ -3,7 +3,7 @@ image: adoptopenjdk/maven-openjdk11:latest
 build-job:
   stage: build
   script:
-    - mvn comp
+    - mvn compile
 test-job:
   stage: test
   script:
