@@ -1,0 +1,8 @@
+build-job:
+  stage: build
+  script:
+    - mvn verify
+test-job:
+  stage: test
+  script:
+    - mvn clean test
